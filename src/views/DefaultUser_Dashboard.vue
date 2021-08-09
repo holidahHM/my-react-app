@@ -1,0 +1,399 @@
+<template>
+  <div>
+    <base-header class="pb-6 pb-8 pt-5 pt-md-8 bg-gradient-success">
+      <!-- Card stats --><b-row
+        ><b-col class="col-md-12">
+          <div class="col-xl-12 alert alert-info">
+               <b-dropdown
+                          id="dropdown-left"
+                          text="Choose View"
+                          variant="primary"
+                          class="m-2"
+                        >
+                          <b-dropdown-item
+                            ><router-link to='/homepage'>
+                              STAFF DASHBOARD</router-link
+                            ></b-dropdown-item
+                          >
+                          <b-dropdown-item
+                            ><router-link to='/DefaultTeam_Dashboard'>
+                              TEAM DASHBOARD</router-link
+                            ></b-dropdown-item>
+                        </b-dropdown>
+          </div>
+        </b-col></b-row
+      >
+      <b-row>
+        <!--one card removed based on bootstrap row size 
+        <b-col xl="2" md="6">
+          <stats-card title="Compliance"
+                      type="gradient-red"
+                      sub-title="350,897"
+                      icon="ni ni-active-40"
+                      class="mb-4">
+
+            <template slot="footer">
+              <span class="text-success mr-2">3.48%</span>
+              <span class="text-nowrap">Since last month</span>
+            </template>
+          </stats-card>
+        </b-col> -->
+        <!-- <b-col xl="2" md="6">
+          <stats-card title="DEPT"
+                      sub-title="ICT"
+                      class="mb-4">
+
+            <template slot="footer">
+              <span class="text-success mr-2">Sys-Admin</span>-->
+        <!--<span class="text-nowrap">Users-role</span>-->
+        <!--</template>
+          </stats-card>
+        </b-col>-->
+        <b-col xl="4" md="6">
+          <stats-card
+            title="Leads"
+            type="gradient-orange"
+            sub-title="2,356"
+            icon="ni ni-chart-pie-35"
+            class="mb-4"
+          >
+            <template slot="footer">
+              <span class="text-success mr-2">12.18%</span>
+              <span class="text-nowrap">Since last month</span>
+            </template>
+          </stats-card>
+        </b-col>
+        <b-col xl="4" md="6">
+          <stats-card
+            title="Prospects"
+            type="gradient-green"
+            sub-title="924"
+            icon="ni ni-money-coins"
+            class="mb-4"
+          >
+            <template slot="footer">
+              <span class="text-danger mr-2">5.72%</span>
+              <span class="text-nowrap">Since last month</span>
+            </template>
+          </stats-card>
+        </b-col>
+        <b-col xl="4" md="6">
+          <stats-card
+            title="Servicing"
+            type="gradient-info"
+            sub-title="45"
+            icon="ni ni-chart-bar-32"
+            class="mb-4"
+          >
+            <template slot="footer">
+              <span class="text-success mr-2">54.8%</span>
+              <span class="text-nowrap">Since last month</span>
+            </template>
+          </stats-card>
+        </b-col> </b-row
+      ><br />
+      <b-row>
+        <!--one card removed based on bootstrap row size 
+        <b-col xl="2" md="6">
+          <stats-card title="Compliance"
+                      type="gradient-red"
+                      sub-title="350,897"
+                      icon="ni ni-active-40"
+                      class="mb-4">
+
+            <template slot="footer">
+              <span class="text-success mr-2">3.48%</span>
+              <span class="text-nowrap">Since last month</span>
+            </template>
+          </stats-card>
+        </b-col> -->
+        <!-- <b-col xl="2" md="6">
+          <stats-card title="DEPT"
+                      sub-title="ICT"
+                      class="mb-4">
+
+            <template slot="footer">
+              <span class="text-success mr-2">Sys-Admin</span>-->
+        <!--<span class="text-nowrap">Users-role</span>-->
+        <!--</template>
+          </stats-card>
+        </b-col>-->
+        <b-col xl="4" md="6">
+          <stats-card
+            title="Targets"
+            type="gradient-orange"
+            sub-title="Annual : KSH 8,000,000"
+            icon="ni ni-chart-pie-35"
+            class="mb-4"
+          >
+            <template slot="footer">
+              <span class="text-nowrap">Quarterly : KSH 2,000,000</span>
+            </template>
+          </stats-card>
+        </b-col>
+        <b-col xl="4" md="6">
+          <stats-card
+            title="Incentives"
+            type="gradient-green"
+            sub-title="KSH 4,477,000"
+            icon="ni ni-money-coins"
+            class="mb-4"
+          >
+            <template slot="footer">
+              <span class="text-danger mr-2">KSH 1,254,000</span>
+              <span class="text-nowrap">Outstanding</span><br />
+              <span class="text-success mr-2">KSH 3,123,00</span>
+              <span class="text-nowrap">Paid</span>
+            </template>
+          </stats-card>
+        </b-col>
+        <b-col xl="4" md="6">
+          <stats-card
+            title="Actual Performance"
+            type="gradient-info"
+            sub-title="Ksh 3,523,000"
+            icon="ni ni-chart-bar-32"
+            class="mb-4"
+          >
+            <template slot="footer">
+              <span class="text-nowrap">Pension :</span>
+              <span class="text-success mr-2">40.6%</span><br />
+              <span class="text-nowrap">Insurance :</span>
+              <span class="text-success mr-2">10%</span><br />
+              <span class="text-nowrap">Trust :</span>
+              <span class="text-success mr-2">35.8%</span><br />
+              <span class="text-nowrap">Actuarial :</span>
+              <span class="text-success mr-2">8.8%</span><br />
+              <span class="text-nowrap">Training :</span>
+              <span class="text-success mr-2">4.8%</span>
+            </template>
+          </stats-card>
+        </b-col>
+      </b-row>
+    </base-header>
+
+    <!--Charts-->
+    <b-container fluid class="mt--7">
+      <!-- End charts-->
+
+      <!--Tables-->
+      <b-row class="mt-5">
+        <b-col xl="12" class="mb-5 mb-xl-0">
+          <tasks-table></tasks-table>
+        </b-col>
+        <!--SOCIAL TRAFFIC TABLE..>
+          <b-col xl="4" class="mb-5 mb-xl-0">
+          <social-traffic-table></social-traffic-table>
+        </b-col>--> </b-row
+      ><br />
+      <b-row>
+        <b-col xl="12" class="mb-5 mb-xl-0">
+          <card type="default" header-classes="bg-transparent">
+            <b-row align-v="center" slot="header">
+              <b-col>
+                <h6 class="text-light text-uppercase ls-1 mb-1">
+                  Overview of My Performance
+                </h6>
+                <h5 class="h3 text-white mb-0">MY PERFORMANCE</h5>
+              </b-col>
+              <b-col>
+                <b-nav class="nav-pills justify-content-end">
+                  <b-nav-item
+                    class="mr-2 mr-md-0"
+                    :active="bigLineChart.activeIndex === 0"
+                    link-classes="py-2 px-3"
+                    @click.prevent="initBigChart(0)"
+                  >
+                    <span class="d-none d-md-block">Month</span>
+                    <span class="d-md-none">M</span>
+                  </b-nav-item>
+                  <b-nav-item
+                    link-classes="py-2 px-3"
+                    :active="bigLineChart.activeIndex === 1"
+                    @click.prevent="initBigChart(1)"
+                  >
+                    <span class="d-none d-md-block">Week</span>
+                    <span class="d-md-none">W</span>
+                  </b-nav-item>
+                </b-nav>
+              </b-col>
+            </b-row>
+            <line-chart
+              :height="350"
+              ref="bigChart"
+              :chart-data="bigLineChart.chartData"
+              :extra-options="bigLineChart.extraOptions"
+            >
+            </line-chart>
+          </card>
+        </b-col>
+
+        <b-col xl="4" class="mb-5 mb-xl-0">
+          <dept-team-table></dept-team-table>
+          <!--previous card for the performance chart
+          <card header-classes="bg-transparent">
+            <b-row align-v="center" slot="header">
+              <b-col>
+                <h6 class="text-uppercase text-muted ls-1 mb-1">Performance</h6>
+                <h5 class="h3 mb-0">Total orders</h5>
+              </b-col>
+            </b-row>
+
+            <bar-chart
+              :height="350"
+              ref="barChart"
+              :chart-data="redBarChart.chartData"
+            >
+            </bar-chart>
+          </card> -->
+        </b-col>
+      </b-row>
+      <!--End tables--> </b-container
+    ><br />
+
+    <b-row>
+      <!--one card removed based on bootstrap row size 
+        <b-col xl="2" md="6">
+          <stats-card title="Compliance"
+                      type="gradient-red"
+                      sub-title="350,897"
+                      icon="ni ni-active-40"
+                      class="mb-4">
+
+            <template slot="footer">
+              <span class="text-success mr-2">3.48%</span>
+              <span class="text-nowrap">Since last month</span>
+            </template>
+          </stats-card>
+        </b-col> -->
+      <!-- <b-col xl="2" md="6">
+          <stats-card title="DEPT"
+                      sub-title="ICT"
+                      class="mb-4">
+
+            <template slot="footer">
+              <span class="text-success mr-2">Sys-Admin</span>-->
+      <!--<span class="text-nowrap">Users-role</span>-->
+      <!--</template>
+          </stats-card>
+        </b-col>-->
+      <b-col xl="6" md="6">
+        <stats-card
+          title="Meetings 36"
+          type="gradient-orange"
+          sub-title="Future Meetings : 12"
+          icon="ni ni-chart-pie-35"
+          class="mb-4"
+        >
+          <template slot="footer">
+            <span class="text-nowrap">Past Meetings : 24</span>
+          </template>
+        </stats-card>
+      </b-col>
+      <b-col xl="6" md="6">
+        <stats-card
+          title="Expenses"
+          type="gradient-green"
+          sub-title="KSH 36,450"
+          icon="ni ni-money-coins"
+          class="mb-4"
+        >
+          <template slot="footer">
+            <span class="text-danger mr-2">KSH 10,450</span>
+            <span class="text-nowrap">Outstanding</span><br />
+            <span class="text-success mr-2">KSH 26,000</span>
+            <span class="text-nowrap">Recquisitioned</span>
+          </template>
+        </stats-card>
+      </b-col>
+    </b-row>
+  </div>
+</template>
+<script>
+// Charts
+import * as chartConfigs from "@/components/Charts/config";
+import LineChart from "@/components/Charts/LineChart";
+import BarChart from "@/components/Charts/BarChart";
+
+// Components
+import BaseProgress from "@/components/BaseProgress";
+import StatsCard from "@/components/Cards/StatsCard";
+
+// Tables
+// import DeptTeamTable from './Dashboard/DeptTeamTable';
+import TasksTable from "./Dashboard/TasksTable";
+
+export default {
+  components: {
+    LineChart,
+    BarChart,
+    BaseProgress,
+    StatsCard,
+    TasksTable,
+    //DeptTeamTable
+  },
+  data() {
+    return {
+      bigLineChart: {
+        allData: [
+          [0, 20, 10, 30, 15, 40, 20, 60, 60],
+          [0, 20, 5, 25, 10, 30, 15, 40, 40],
+        ],
+        activeIndex: 0,
+        chartData: {
+          datasets: [
+            {
+              label: "Performance",
+              data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
+            },
+          ],
+          labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        },
+        extraOptions: chartConfigs.blueChartOptions,
+      },
+      redBarChart: {
+        chartData: {
+          labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [
+            {
+              label: "Sales",
+              data: [25, 20, 30, 22, 17, 29],
+            },
+          ],
+        },
+        extraOptions: chartConfigs.blueChartOptions,
+      },
+    };
+  },
+  methods: {
+    initBigChart(index) {
+      let chartData = {
+        datasets: [
+          {
+            label: "Performance",
+            data: this.bigLineChart.allData[index],
+          },
+        ],
+        labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      };
+      this.bigLineChart.chartData = chartData;
+      this.bigLineChart.activeIndex = index;
+    },
+  },
+  mounted() {
+    this.initBigChart(0);
+    /*let user = localStorage.getItem("userData");
+    if (user) {
+      this.$router.push("/homepage");
+    } else {
+      this.$router.push("/login");
+    }*/
+  },
+};
+</script>
+<style>
+.el-table .cell {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+</style>
